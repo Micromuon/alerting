@@ -1,4 +1,4 @@
-var databaseUrl = "alertingDB"; // "username:password@example.com/mydb"
+var databaseUrl = "alertingDB";
 var collections = ["settings"];
 var db = require("mongojs").connect(databaseUrl, collections);
 var assert = require("assert"),
@@ -118,7 +118,7 @@ describe("test alerting", function() {
 
 
 
-
+// Copied from REFERENCE [36] J. Vincent, comment on "Object comparison in JavaScript [duplicate]", StackOverflow, Available: http://stackoverflow.com/questions/1068834/object-comparison- in-javascript
 function equals ( x, y ) {
     // If both x and y are null or undefined and exactly the same
     if ( x === y ) {

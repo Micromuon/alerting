@@ -7,8 +7,6 @@ var moment = require('moment');
 moment().format();
 
 var nodemailer = require('nodemailer');
-// from http://www.nodemailer.com/
-// create reusable transporter object using SMTP transport
 var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
